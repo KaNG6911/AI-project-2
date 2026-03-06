@@ -23,13 +23,13 @@ export default function RootLayout({
       <body>
         <ClerkProvider>
           <header>
-            <Show when="signed-out">
-              <SignInButton>Sign in</SignInButton>
-              <SignUpButton>Sign up</SignUpButton>
+            <Show when="signed-out" fallback={<UserButton />}>
+              <SignInButton >Sign in</SignInButton>
+              <SignUpButton >Sign up</SignUpButton>
             </Show>
           </header>
 
-          <Show when="signed-out">hoHoHOHOhO</Show>
+          <Show when="signed-out" >hoHoHOHOhO</Show>
 
           <Show when="signed-in">{children}</Show>
         </ClerkProvider>

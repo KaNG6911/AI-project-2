@@ -1,9 +1,9 @@
-import CreateUser from "../app/component/CreateUser";
+// import CreateUser from "../app/component/CreateUser";
 
 export default function Home() {
   return (
     <div>
-      <CreateUser />
+      <h1 className="text-3xl font-bold text-center mt-10">Welcome to the Next.js Prisma Example!</h1>
     </div>
   );
 }
